@@ -63,16 +63,16 @@ Parentheses does not affect the results of a search pattern but rather group the
 ### Character Classes
 A character class you can tell the regex engine to match only one out of several characters. Put the characters you want in the [] brakcets say for example [ae] which can be used to find words like "gray" or "grey" and will not return "graay" or "graey". below is a table with character classes.
 
-Character Class    |    Meaning
------------------  | -------------- 
-a-z                | Match any letter within the range of lowercase a to lowercase z.            
-0-9                | Search any digit which is between the brackets            
-@                  | Match literal at signs. Found following the first parenthetical group in our email RegEx.            
-\.                 | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.         
--                  | Match literal hyphens.        
-\d                 | Match a digit or a character from 0 to 9
-_                  | Match literal underscores. 
-\D                 | Matches any character that is not a digit 
+Character Class    |    Meaning                                                                                                                     |
+-----------------  | --------------                                                                                                                 |
+a-z                | Match any letter within the range of lowercase a to lowercase z.                                                               |
+0-9                | Search any digit which is between the brackets                                                                                 |
+@                  | Match literal at signs. Found following the first parenthetical group in our email RegEx.                                      |
+-                  | Match literal hyphens.                                                                                                         |
+\d                 | Match a digit or a character from 0 to 9                                                                                       |
+_                  | Match literal underscores.                                                                                                     |
+\D                 | Matches any character that is not a digit                                                                                      |
+\.                 | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.  |        
 
 
 ### Bracket Expressions
