@@ -1,4 +1,4 @@
-# Regex Tutorial
+# Email Regex Tutorial
 
 Regex refers to Regular Expressions, regex is used in many programing languages so developers can find specific combination of characters. Regular Expressions allows a programmer to search  for variations of string matching a specific pattern rather than being limited to a query. Having this in mind, think about a large database with 100,000 users (with name, last name,  email) & you need to find someone by email. 
 
