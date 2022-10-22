@@ -20,7 +20,7 @@ Let's get started.
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Conclucion](#conclusion)
+- [Conclusion](#conclusion)
 
 ## Regex Components
 
@@ -36,14 +36,14 @@ let's think about this for a second. If you use RegEx to search for /book/ it'll
 Quantifiers are instances of a character, group, class must be present in the input to find a match.
 Below are some exaples of quantifiers:
 
-Greedy Quantifier | Lazy Quatifier |  Description 
------------------ | -------------- | -------------
-*                 | *?             | Match zero or more times.
-+                 | +?             | Match one or more times.
-?                 | ??             | Match zero or one time.
-{ n }             | { n }?         | Match exactly n times.
-{ n ,}            | { n ,}?        | Match at least n times.
-{ n , m }         | { n , m }?     | Match from n to m times.
+ Greedy Quantifier | Lazy Quatifier |  Description |
+| ----------------- | -------------- | ------------- |
+| *                 | *?             | Match zero or more times. |
+| +                 | +?             | Match one or more times. |
+| ?                 | ??             | Match zero or one time. |
+| { n }             | { n }?         | Match exactly n times. |
+| { n ,}            | { n ,}?        | Match at least n times. |
+| { n , m }         | { n , m }?     | Match from n to m times. |
 
 The email RegEx uses a plus (+) and brace ({....}) qunatifiers, here is an example shown here:
 ([...]+)@([...]+)\.([...]{2,6}) 
@@ -63,16 +63,16 @@ Parentheses does not affect the results of a search pattern but rather group the
 ### Character Classes
 A character class you can tell the regex engine to match only one out of several characters. Put the characters you want in the [] brakcets say for example [ae] which can be used to find words like "gray" or "grey" and will not return "graay" or "graey". below is a table with character classes.
 
-Character Class    |    Meaning                                                                                                                     |
------------------  | --------------                                                                                                                 |
-a-z                | Match any letter within the range of lowercase a to lowercase z.                                                               |
-0-9                | Search any digit which is between the brackets                                                                                 |
-@                  | Match literal at signs. Found following the first parenthetical group in our email RegEx.                                      |
--                  | Match literal hyphens.                                                                                                         |
-\d                 | Match a digit or a character from 0 to 9                                                                                       |
-_                  | Match literal underscores.                                                                                                     |
-\D                 | Matches any character that is not a digit                                                                                      |
-\.                 | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.  |        
+| Character Class | Meaning |
+| -----------------  | -------------- |
+| a-z | Match any letter within the range of lowercase a to lowercase z.                                                               |
+| 0-9 | Search any digit which is between the brackets                                                                                 |
+| @   | Match literal at signs. Found following the first parenthetical group in our email RegEx.                                      |
+| -   | Match literal hyphens.                                                                                                         |
+| \d  | Match a digit or a character from 0 to 9                                                                                       |
+| _   | Match literal underscores.                                                                                                     |
+| \D  | Matches any character that is not a digit                                                                                      |
+| \.  | Match literals dot (.). Dots have special functions in regular expression. The backslash (\) is used to escape the character.  |            
 
 
 ### Bracket Expressions
@@ -122,8 +122,6 @@ We discussed the following:
 - Bracket expressions matching list and non-matching list.
 - Boundaries being able to search for words using \b.
 - Using backreferences to recall previous code to reuse.
-
-### Look-ahead and Look-behind
 
 ## Author
 
